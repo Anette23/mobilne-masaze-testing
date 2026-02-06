@@ -2,30 +2,45 @@
 
 Tento projekt slúži ako ukážka mojich zručností v oblasti manuálneho testovania webových aplikácií. Zameriava sa na overenie funkčnosti, použiteľnosti a používateľskej skúsenosti (UX) webovej stránky pre služby mobilného maséra.
 
-**Testovaný web:** [https://www.mobilnemasaze.eu](https://www.mobilnemasaze.eu)
+**Testovaný web:** https://www.mobilnemasaze.eu
 
 ---
 
 ## 🛠 Rozsah projektu (Project Scope)
-Cieľom bolo vykonať komplexné manuálne testovanie so zameraním na kritické biznis procesy:
-* **Objednávkový proces:** Overenie funkčnosti kontaktných formulárov.
-* **User Interface (UI):** Kontrola responzivity na rôznych zariadeniach a prehliadačoch.
-* **UX & Navigácia:** Plynulosť pohybu po stránke a prístup k dôležitým informáciám (cenník, kontakty).
-* **Validácia dát:** Testovanie vstupných polí a pridávania recenzií.
+Cieľom projektu bolo vykonať manuálne testovanie objednávkového formulára ako kľúčového biznis procesu webovej stránky. Testovanie zahŕňalo prípravu test planu, tvorbu testovacích prípadov, ich následné vykonávanie (test execution) a reportovanie chýb.
 
-## 📂 Štruktúra repozitára
-* **`01_TestPlan/`** – Stratégia testovania, definícia prostredia, testovacie úrovne a kritériá úspešnosti.
-* **`02_TestCases/`** – Detailné testovacie prípady (Step-by-step) s definovanými očakávanými výsledkami.
-* **`03_BugReports/`** – Zoznam reportovaných chýb (Summary, Steps to Reproduce, Severity, Priority, Screenshots).
-* **`04_ExploratoryTesting/`** – Záznam z voľného prieskumného testovania (Charter, Findings).
-
-## 🚀 Použité technológie a nástroje
-* **Metodika:** Manuálne testovanie (Black Box)
-* **Dokumentácia:** Markdown / Google Sheets / MS Excel
-* **Nástroje:** DevTools (pre analýzu elementov), Lighthouse (základná kontrola výkonu)
-* **Prehliadače:** Chrome, Firefox, Safari (Mobile)
-
-## 💡 Čo som sa naučila
-Počas tohto projektu som si precvičila písanie efektívnej testovacej dokumentácie, identifikáciu kritických chýb (vysoká priorita) a pochopenie toho, ako drobné chyby v UX môžu ovplyvniť konverzie webu.
+Zameranie testovania:
+- **Objednávkový proces:** Odoslanie objednávky, validačné scenáre, chybové stavy.
+- **Validácia dát:** Email, telefón, dátum, povinné polia, extrémne vstupy.
+- **Bezpečnosť:** Základné testy SQL Injection a XSS v input poliach.
+- **UX & navigácia:** Scrollovanie k formuláru z rôznych častí webu, správanie success popupu.
+- **Responzivita:** Funkčnosť formulára na mobile a tablete.
+- **Kompatibilita:** Testovanie v rôznych prehliadačoch (Chrome, Firefox, Edge).
+- **Výkon:** Odozva formulára pri odoslaní objednávky.
 
 ---
+
+## 📂 Štruktúra repozitára
+- **`01_TestPlan/`** – Testovací plán: rozsah, stratégia, prostredie, vstupné a výstupné kritériá.
+- **`02_TestCases/`** – Testovacie prípady pre objednávkový formulár (TC-OF-001 až TC-OF-020).
+- **`03_BugReports/`** – Reporty chýb (Summary, Steps to Reproduce, Expected vs. Actual Result, Severity, Priority).
+- **`04_TestExecution/`** – Záznamy z vykonávania testov (PASS / FAIL / BLOCKED, odkazy na bugy).
+- **`05_ExploratoryTesting/`** – Záznamy z prieskumného testovania a UX poznámky.
+
+---
+
+## 🚀 Použité technológie a nástroje
+- **Typ testovania:** Manuálne testovanie (Black Box)
+- **Dokumentácia:** Markdown (GitHub)
+- **Nástroje:** Browser DevTools, Lighthouse (základná kontrola výkonu)
+- **Prehliadače / zariadenia:** Chrome, Firefox, Edge, Mobile (DevTools)
+
+---
+
+## 💡 Čo som sa naučila
+Počas tohto projektu som si precvičila:
+- návrh a štruktúrovanie testovacích prípadov pre kritický formulár,
+- vykonávanie manuálneho testovania a evidenciu výsledkov,
+- reportovanie funkčných, validačných a UX chýb,
+- identifikáciu bezpečnostných rizík v input poliach,
+- pohľad na web z perspektívy koncového používateľa.
