@@ -26,7 +26,7 @@ Zameranie testovania:
     * `TC_OrderForm.md` – Objednávkový formulár (TC-001 – TC-020)
     * `TC_Reviews.md` – Sekcia Recenzie (TC-R01 – TC-R13)
     * `TC_Website.md` – Navigácia, Hero, O mne, Výhody, Služby, Darčekové poukážky, Animácie, Responzívnosť, Výkon (TC-N01 – TC-P03)
-    - **`03_BugReports/`** – Reporty chýb (Summary, Steps to Reproduce, Expected vs. Actual Result, Severity, Priority).
+- **`03_BugReports/`** – Reporty chýb (Summary, Steps to Reproduce, Expected vs. Actual Result, Severity, Priority).
 - **`04_TestExecution/`** – Záznamy z vykonávania testov (PASS / FAIL / BLOCKED, odkazy na bugy).
 - **`05_ExploratoryTesting/`** – Záznamy z prieskumného testovania a UX poznámky.
 
